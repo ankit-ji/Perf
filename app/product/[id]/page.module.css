@@ -1,0 +1,141 @@
+.page {
+  padding: 4rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageColumn {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 8rem;
+  color: var(--accent);
+  opacity: 0.3;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+.breadcrumbs a {
+  transition: opacity 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.brand {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.notes {
+  background-color: var(--secondary);
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.notes strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.wishlistBtn {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.wishlistBtn:hover {
+  opacity: 1;
+}
+
+.shippingInfo {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.shippingInfo p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .imageColumn {
+    position: static;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+}
